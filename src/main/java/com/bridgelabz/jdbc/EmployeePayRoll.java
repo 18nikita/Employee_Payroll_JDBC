@@ -18,22 +18,21 @@ public class EmployeePayRoll {
             while (resultSet.next()) {
                 Employee employee = new Employee();
 
-				employee.setID(resultSet.getInt("ID"));
-				employee.setNAME(resultSet.getString("Name"));
-				employee.setEmployee_ID(resultSet.getInt("employee_ID"));
-				employee.setPhone_number(resultSet.getInt("phone_number"));
-				employee.setAddress(resultSet.getString("address"));
-				employee.setDepartment(resultSet.getString("department"));
-				employee.setDepartment_ID(resultSet.getInt("department_ID"));
-				employee.setGENDER(resultSet.getString("GENDER"));
-				employee.setBasic_pay(resultSet.getDouble("basic_pay"));
-				employee.setDeductions(resultSet.getDouble("deductions"));
-				employee.setTaxable_pay(resultSet.getDouble("taxable_pay"));
-				employee.setTax(resultSet.getDouble("tax"));
-				employee.setNet_pay(resultSet.getDouble("net_pay"));
-				employee.setSALARY(resultSet.getDouble("SALARY"));
-				employee.setSTART_DATE(resultSet.getString("START_DATE"));
-                
+                employee.setID(resultSet.getInt("ID"));
+                employee.setNAME(resultSet.getString("NAME"));
+                employee.setEmployee_ID(resultSet.getInt("EMPLOYEE_ID"));
+                employee.setPhone_number(resultSet.getInt("Phone_Number"));
+                employee.setAddress(resultSet.getString("Address"));
+                employee.setDepartment(resultSet.getString("Department"));
+                employee.setDepartment_ID(resultSet.getInt("DEPARTMENT_ID"));
+                employee.setGENDER(resultSet.getString("GENDER"));
+                employee.setBasic_pay(resultSet.getDouble("Basic_Pay"));
+                employee.setDeductions(resultSet.getDouble("Deductions"));
+                employee.setTaxable_pay(resultSet.getDouble("TaxablePay"));
+                employee.setTax(resultSet.getDouble("Tax"));
+                employee.setNet_pay(resultSet.getDouble("Net_Pay"));
+                employee.setSALARY(resultSet.getDouble("SALARY"));
+                employee.setSTART_DATE(resultSet.getString("Start_DATE"));
                 empList.add(employee);
             }
             for (Employee i : empList) {

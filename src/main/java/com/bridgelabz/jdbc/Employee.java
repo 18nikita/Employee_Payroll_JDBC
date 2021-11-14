@@ -1,7 +1,7 @@
 package com.bridgelabz.jdbc;
 
 public class Employee {
-	int ID, employee_ID, phone_number, department_ID;
+	int ID, employee_ID, phone_number, DEPARTMENT_ID;
 	double basic_pay, deductions, taxable_pay, tax, net_pay, SALARY;
 	String GENDER;
 	String department, address, NAME, START_DATE;
@@ -31,11 +31,11 @@ public class Employee {
 	}
 
 	public int getDepartment_ID() {
-		return department_ID;
+		return DEPARTMENT_ID;
 	}
 
-	public void setDepartment_ID(int department_ID) {
-		this.department_ID = department_ID;
+	public void setDepartment_ID(int i) {
+		this.DEPARTMENT_ID = i;
 	}
 
 	public double getBasic_pay() {
@@ -82,8 +82,8 @@ public class Employee {
 		return SALARY;
 	}
 
-	public void setSALARY(double sALARY) {
-		SALARY = sALARY;
+	public void setSALARY(double string) {
+		SALARY = string;
 	}
 
 	public String getGENDER() {
@@ -129,7 +129,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [ID=" + ID + ", employee_ID=" + employee_ID + ", phone_number=" + phone_number
-				+ ", department_ID=" + department_ID + ", basic_pay=" + basic_pay + ", deductions=" + deductions
+				+ ", department_ID=" + DEPARTMENT_ID + ", basic_pay=" + basic_pay + ", deductions=" + deductions
 				+ ", taxable_pay=" + taxable_pay + ", tax=" + tax + ", net_pay=" + net_pay + ", SALARY=" + SALARY
 				+ ", GENDER=" + GENDER + ", department=" + department + ", address=" + address + ", NAME=" + NAME
 				+ ", START_DATE=" + START_DATE + "]";

@@ -27,7 +27,7 @@ public class EmployeePayRollTest {
 	@Test
 	public void givenUpdatingRahulBasicPay_whenUpdate_ShouldReturnUpdatedPay() {
 		double basic_pay = 800000;
-		String NAME = "abhi";
+		String NAME = "Bill";
 		double salaryUpdated = employeePayRollService.updateBasicPay(NAME, basic_pay);
 		Assert.assertEquals(basic_pay, salaryUpdated, 0.0);
 	}
